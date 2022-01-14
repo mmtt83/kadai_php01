@@ -1,0 +1,87 @@
+/************ 共通部分 ************/
+body{
+    background-color: #000;
+}
+.txt-center{
+    text-align: center;
+}
+.menue{
+    width:300px;
+    margin:0 auto;
+    padding:10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+/************ post.php ************/
+.main{
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    padding: 20px 0 50px;
+}
+.logo img{
+    width: 500px;
+}
+.main h1{
+    padding: 30px 0;
+}
+.sarvey{
+    width: 790px;
+    margin: 30px auto;
+    padding:20px;
+    background-color: #ffd60a;
+    color:#000;
+}
+
+/* 参考サイト：HTML/CSS】レビュー評点などの登録に使える星(★)ボタン 【コピペで使える】 */
+/* https://zakkuri.life/%E3%80%90%E3%82%B3%E3%83%94%E3%83%9A%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%80%91%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E8%A9%95%E7%82%B9%E3%81%AA%E3%81%A9%E3%81%AE%E7%99%BB%E9%8C%B2%E3%81%AB%E4%BD%BF/ */
+.rate-form{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+}
+.rate-form input[type=radio]{
+    display: none;
+}
+.rate-form label{
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+.rate-form label:hover{
+    color: #000;
+}
+.rate-form input[type=radio]:checked ~ label{
+    color: #000;
+}
+
+/************ write.php ************/
+.main_write{
+    width: 790px;
+    margin: 50px auto;
+    border-radius: 80% 30% 50% 50%/50%;
+    padding:60px;
+    background-color: #ffd60a;
+    color:#000;
+}
+
+/************ read.php ************/
+.main_read{
+    width: 790px;
+    margin: 50px auto;
+    padding:30px;
+    background-color: #fff;
+    color:#000;
+    text-align: center;
+}
+.result{
+    width: 500px;
+    margin: auto;
+}
+.result h2{
+    margin-top: 50px;
+}
+
+
