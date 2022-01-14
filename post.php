@@ -21,13 +21,13 @@
 <p><img src="img/220108_3938.jpeg" alt=""></p>
 
 <div class="sarvey">
-    <p>1月8日の試合についてアンケートのご協力お願いします。</p>
+    <h3>1月8日の試合についてアンケートのご協力お願いします。</h3>
     <form action="write.php" method="post">
         <div class="form-item">お名前</div>
-        <input type="text" name="name">
+        <input type="text" name="name" class="box">
 
         <div class="form-item">年齢</div>
-        <select name="age" id="">
+        <select name="age" id="" class="box">
             <option value="未選択">選択してください</option>
             <!-- for文の練習 -->
             <?php
@@ -41,7 +41,7 @@
         <?php
         $areas = array('東京都', '神奈川県', '埼玉県', '千葉県', '東北エリア', '関西エリア', '東海エリア', 'その他');
         ?>
-        <select name="areaCategory">
+        <select name="areaCategory" class="box">
             <option value="未選択">選択してください</option>
             <?php
                 foreach($areas as $area){
@@ -60,9 +60,9 @@
             ?>
         </div>
         <div class="form-item">感想</div>
-        <textarea name="body"></textarea>
+        <textarea name="body" class="box"></textarea>
 
-        <input type="submit" value="送信">
+        <p><input class="btn" type="submit" value="送信"></p>
 
     </form>
 </div>

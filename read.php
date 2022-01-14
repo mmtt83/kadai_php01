@@ -109,11 +109,12 @@ fclose($file);
         <canvas id="barChart02"></canvas>
 
         <h2>感想</h2>
-        <p><?php
+        <p class="kanso"><?php
                 $array_body = $ary_body;
                 foreach($array_body as $value){
                     echo $value;
-                    echo "\n"; //※※出来なかったところ：データが改行してくれなかった。。。
+                    //echo "\n"; //※※出来なかったところ：データが改行してくれなかった。。。
+                    echo "<br>";
                 }
             ?></p>
 
